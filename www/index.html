@@ -33,15 +33,17 @@
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/homeView.js"></script>
+        <script type="text/javascript" src="js/rest.js"></script>
+        <script type="text/javascript" src="js/specialsView.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body id="body-tag" class="container">
         <div class="fluid-container">
             <ul class="nav nav-pills">
                 <li role="presentation" class="active"><a href="#" onclick="homeView.navigate(homeView.init, this); return false;">Home</a>
-                <li role="presentation" class=""><a href="#" onclick="homeView.navigate(function(){$('#nav-container').html('');},this); return false;">Sales</a>
+                <li role="presentation" class=""><a href="#" onclick="homeView.navigate(specialsView.init, this); return false;">Sales</a>
             </ul>
-                <div id="nav-container">
+            <div id="nav-container">
             show something
             </div>
         </div>
