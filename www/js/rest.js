@@ -1,12 +1,18 @@
 var rest = function($) {
     var mod = {};
 
+    var restStem = 'http://url/for/backend/';
+
     mod.specials = function() {
         return $.ajax({
-            url: 'wholefoods.coop/ws/specials/',
+            url: restStem + '/specials/',
             dataType: 'json', 
         });
     };
+
+    mod.specialsURL = function() {
+        return restStem + '/specials/';
+    }
 
     return mod;
 }(jQuery);

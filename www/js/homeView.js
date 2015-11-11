@@ -1,5 +1,5 @@
 var homeView = function($) {
-    var html = "<div class=\"pp\"><h1>WFC JS</h1></div>";
+    var html = "<div class=\"pp\"><h1>WHAT GOES HERE?</h1></div>";
 
     var mod = {};
     mod.init = function() { $('#nav-container').html(html); };

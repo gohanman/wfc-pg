@@ -25,11 +25,15 @@ var specialsView = function($) {
     };
 
     mod.show = function(i) {
-        var ret = '<h3>' + specials[i].expires + '</h3>'; 
-        for (var j=0; j<specials[i].pages.length; j++) {
-            ret += '<img src="' + specials[i].pages[j] + '</img>';
+        var ret = '<div class="text-center specials">'
+            + '<h2>' + specials[i].name + '</h2>' 
+            + '<h4>' + specials[i].start + ' to ' + specials[i].end + '</h4>';
+        for (var j=0; j<specials[i].images.length; j++) {
+            ret += '<img src="' + rest.specialsURL() + specials[i].images[j] + '" />';
             ret += '<div><em>Page ' + (j+1) + '</em></div>';
+            console.log(j);
         }
+        ret += '</div>';
         $('#specials-images').html(ret);
     };
 
