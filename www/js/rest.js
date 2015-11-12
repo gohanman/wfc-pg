@@ -1,7 +1,7 @@
 var rest = function($) {
     var mod = {};
 
-    var restStem = 'http://url/for/backend/';
+    var restStem = 'http://url/for/backend';
 
     mod.specials = function() {
         return $.ajax({
@@ -13,6 +13,15 @@ var rest = function($) {
     mod.specialsURL = function() {
         return restStem + '/specials/';
     }
+
+    mod.validateOwner = function(dataStr) {
+        return $.ajax({
+            url: restStem + '/owner/',
+            data: dataStr,
+            dataType: 'json',
+            type: 'post'
+        });
+    };
 
     return mod;
 }(jQuery);

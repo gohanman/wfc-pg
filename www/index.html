@@ -32,7 +32,9 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/dataStore.js"></script>
         <script type="text/javascript" src="js/homeView.js"></script>
+        <script type="text/javascript" src="js/ownerView.js"></script>
         <script type="text/javascript" src="js/rest.js"></script>
         <script type="text/javascript" src="js/specialsView.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -43,6 +45,7 @@
             <ul class="nav nav-pills">
                 <li role="presentation" class="active"><a href="#" onclick="homeView.navigate(homeView.init, this); return false;">Home</a>
                 <li role="presentation" class=""><a href="#" onclick="homeView.navigate(specialsView.init, this); return false;">Sales</a>
+                <li role="presentation" class=""><a href="#" onclick="homeView.navigate(ownerView.init, this); return false;">Ownership</a>
             </ul>
             <div id="nav-container">
             show something
